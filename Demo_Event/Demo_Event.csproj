@@ -203,6 +203,12 @@
     <None Include="DataBase\DataBaseModel.edmx.diagram">
       <DependentUpon>DataBaseModel.edmx</DependentUpon>
     </None>
+    <None Include="Documentations\Блок-схемы.vsdx" />
+    <None Include="Documentations\Дополнения к техническому заданию.docx" />
+    <None Include="Documentations\Дополнительная.pdf" />
+    <None Include="Documentations\Качественные характеристики кода.docx" />
+    <None Include="Documentations\Основная.pdf" />
+    <None Include="Documentations\Руководство системного программиста.docx" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -224,6 +230,7 @@
       <DependentUpon>DataBaseModel.edmx</DependentUpon>
       <LastGenOutput>DataBaseModel.cs</LastGenOutput>
     </Content>
+    <Content Include="Documentations\Script.sql" />
     <Resource Include="Resources\EventsLogo\1.jpeg" />
     <Resource Include="Resources\EventsLogo\10.jpg" />
     <Resource Include="Resources\EventsLogo\11.jpg" />
