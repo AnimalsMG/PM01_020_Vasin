@@ -7,6 +7,18 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+        <Grid Background="BlueViolet">
+            <TextBlock Text="Мероприятия" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10" Grid.Row="0" FontSize="30"/>
+            <Button Content="Назад" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10" Grid.Row="0" Click="BtnBack_Click" Name="BtnBack"/>
+        </Grid>
+
+        <Frame Name="MainFrame" ContentRendered="MainFrame_ContentRendered" NavigationUIVisibility="Hidden" Grid.Row="1"/>
+
+        <Grid Grid.Row="2" Background="BlueViolet"/>
     </Grid>
 </Window>

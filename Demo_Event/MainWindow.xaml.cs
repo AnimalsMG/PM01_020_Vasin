@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Demo_Event.Model;
+using Demo_Event.Pages;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +25,21 @@ namespace Demo_Event
         public MainWindow()
         {
             InitializeComponent();
+            MainFrame.Navigate(new EventsPage());
+            Manager.MainFrame = MainFrame;
+        }
+
+        private void MainFrame_ContentRendered(object sender, EventArgs e)
+        {
+            if (MainFrame.CanGoBack)
+                BtnBack.Visibility = Visibility.Visible;
+            else
+                BtnBack.Visibility = Visibility.Hidden;
+        }
+
+        private void BtnBack_Click(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.GoBack();
         }
     }
 }

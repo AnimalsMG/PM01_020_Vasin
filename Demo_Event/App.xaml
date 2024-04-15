@@ -4,6 +4,14 @@
              xmlns:local="clr-namespace:Demo_Event"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <Style TargetType="TextBlock">
+            
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="Width" Value="175"/>
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="Background" Value="Orange"/>
+        </Style>
     </Application.Resources>
 </Application>
